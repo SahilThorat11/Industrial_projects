@@ -253,14 +253,14 @@ int main()
     StartAuxillaryDataInitialization();
 
     printf("-----------------------------------------------------------------------------\n");
-    printf("--------------------- Marvellous CVFS started sucessfully -------------------\n");
+    printf("--------------------- Marvellous CVFS started sucessfully -------------------\n");   
     printf("-----------------------------------------------------------------------------\n");
 
     while(1)    
     {
         fflush(stdin);          
 
-        strcpy(str,"");
+        strcpy(str,"");       
 
         printf("\nMarvellous CVFS : > ");
         fgets(str, sizeof(str), stdin);        // Scanf("%s",str);
