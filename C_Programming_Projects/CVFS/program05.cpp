@@ -256,9 +256,9 @@ int main()
     printf("--------------------- Marvellous CVFS started sucessfully -------------------\n");
     printf("-----------------------------------------------------------------------------\n");
 
-    while(1)
+    while(1)    
     {
-        fflush(stdin);
+        fflush(stdin);          
 
         strcpy(str,"");
 
