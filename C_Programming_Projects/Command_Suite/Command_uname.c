@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
     if(iRet == -1)
     {
-        printf("Error : Unable to fetch system information\n");
+        printf("Error : Unable to fetch system information.\n");
 
         return -1;
     }
