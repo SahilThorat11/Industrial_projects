@@ -21,8 +21,8 @@ int main(int argc, char *argv[])
 {
     if(argc != 2)
     {
-        printf("Error : Inssufficient arguments\n");
-        printf("Use command as : ./touchx FileName\n");
+        printf("Error : Inssufficient arguments.\n");
+        printf("Use command as : ./touchx FileName.\n");
         return -1;
     }
 
