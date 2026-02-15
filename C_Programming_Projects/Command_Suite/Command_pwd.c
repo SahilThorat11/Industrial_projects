@@ -20,8 +20,7 @@ int main(int argc, char *argv[])
 
     getcwd(Buffer, sizeof(Buffer));
 
-    printf("\nPath\n");
-    printf("----\n");
+    printf("\nPath\n----\n");
     printf("%s\n\n", Buffer);
 
     return 0;
