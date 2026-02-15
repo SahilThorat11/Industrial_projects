@@ -42,8 +42,8 @@ int main(int argc, char *argv[])
 {
     if(argc != 2)
     {
-        printf("Error : Inssufficient arguments\n");
-        printf("Use command as : ./stat2x FileName\n");
+        printf("Error : Inssufficient arguments.\n");
+        printf("Use command as : ./stat2x FileName.\n");
         return -1;
     }
 
@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 
         if(iRet == -1)
         {
-            printf("Error : Unable to fetch statistical information\n");
+            printf("Error : Unable to fetch statistical information.\n");
             return -1;
         }
 
@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-        printf("Error : File not found\n");
+        printf("Error : File not found.\n");
         return -1;
     }
 
