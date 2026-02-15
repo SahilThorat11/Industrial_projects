@@ -21,18 +21,18 @@ int main(int argc, char *argv[])
     {
         if(unlink(argv[1]) == -1)
         {
-            printf("Error : Unable to delete\n");
+            printf("Error : Unable to delete.\n");
 
             return -1;
         }
         else
         {
-            printf("Success : File gets deleted\n");
+            printf("Success : File gets deleted.\n");
         }
     }
     else
     {
-        printf("Error : Unable to delete as file is not present\n");
+        printf("Error : Unable to delete as file is not present.\n");
         return -1;
     }
 
