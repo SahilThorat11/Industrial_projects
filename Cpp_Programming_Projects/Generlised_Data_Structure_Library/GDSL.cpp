@@ -1436,7 +1436,9 @@ void DoublyCLL<T>::DeleteAtPos(int pos)
 
 
 ////////////////////////////////////////////////////////////////////////////
+//
 //                    Stack using Generic Approch
+//
 ////////////////////////////////////////////////////////////////////////////
 
 #pragma pack(1)
@@ -1471,6 +1473,17 @@ class Stack
         int Count(); 
 };
 
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :     Stack
+//  Input         :     None
+//  Output        :     None
+//  Description   :     Constructor to initialise Stack
+//  Author        :     Sahil Rajaram Thorat
+//  Date          :     18/02/2026
+//
+////////////////////////////////////////////////////////////////////////////
+
 template<class T>
 Stack<T> :: Stack()
 {
@@ -1478,6 +1491,17 @@ Stack<T> :: Stack()
     this->first = NULL;
     this->iCount = 0;
 }
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :     Push
+//  Input         :     Data of node
+//  Output        :     None
+//  Description   :     Inserts element at top of stack
+//  Author        :     Sahil Rajaram Thorat
+//  Date          :     18/02/2026
+//
+////////////////////////////////////////////////////////////////////////////
 
 template<class T>
 void Stack<T> :: Push(T no)            
@@ -1492,6 +1516,17 @@ void Stack<T> :: Push(T no)
     this->iCount++;
 }
 
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :     Pop
+//  Input         :     None
+//  Output        :     Returns top element
+//  Description   :     Removes and returns top element from stack
+//  Author        :     Sahil Rajaram Thorat
+//  Date          :     18/02/2026
+//
+////////////////////////////////////////////////////////////////////////////
+
 template<class T>
 T Stack<T> :: Pop()                
 {
@@ -1501,7 +1536,7 @@ T Stack<T> :: Pop()
     if(this->first == NULL)
     {
         cout<<"Stack is empty\n";
-        return -1;
+        return T();
     }
 
     Value = this->first -> data;
@@ -1513,6 +1548,17 @@ T Stack<T> :: Pop()
 
     return Value;
 }
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :     Peep
+//  Input         :     None
+//  Output        :     Returns top element
+//  Description   :     Returns top element without removing it
+//  Author        :     Sahil Rajaram Thorat
+//  Date          :     18/02/2026
+//
+////////////////////////////////////////////////////////////////////////////
 
 template<class T>
 T Stack<T> :: peep()
@@ -1529,6 +1575,17 @@ T Stack<T> :: peep()
     
     return Value;
 }
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :     Display
+//  Input         :     None
+//  Output        :     Displays stack elements
+//  Description   :     Prints all elements of stack from top to bottom
+//  Author        :     Sahil Rajaram Thorat
+//  Date          :     18/02/2026
+//
+////////////////////////////////////////////////////////////////////////////
 
 template<class T>
 void Stack<T> :: Display()
@@ -1548,6 +1605,17 @@ void Stack<T> :: Display()
     }
 }
 
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :     Count
+//  Input         :     None
+//  Output        :     Integer
+//  Description   :     Returns total number of elements in stack
+//  Author        :     Sahil Rajaram Thorat
+//  Date          :     18/02/2026
+//
+////////////////////////////////////////////////////////////////////////////
+
 template<class T>
 int Stack<T> :: Count()
 {
@@ -1555,7 +1623,9 @@ int Stack<T> :: Count()
 }
 
 ////////////////////////////////////////////////////////////////////////////
+//
 //              Queue using Generic Approch
+//
 ////////////////////////////////////////////////////////////////////////////
 
 #pragma pack(1)
@@ -1590,6 +1660,17 @@ class Queue
         int Count(); 
 };
 
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :     Queue
+//  Input         :     None
+//  Output        :     None
+//  Description   :     Constructor to initialise Queue
+//  Author        :     Sahil Rajaram Thorat
+//  Date          :     18/02/2026
+//
+////////////////////////////////////////////////////////////////////////////
+
 template<class T>
 Queue<T> :: Queue()
 {
@@ -1599,6 +1680,17 @@ Queue<T> :: Queue()
     this->last = NULL;
     this->iCount = 0;
 }
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :     Enqueue
+//  Input         :     Data of node
+//  Output        :     None
+//  Description   :     Inserts element at rear end of queue
+//  Author        :     Sahil Rajaram Thorat
+//  Date          :     18/02/2026
+//
+////////////////////////////////////////////////////////////////////////////
 
 template<class T>
 void Queue<T> :: enqueue(T no)            
@@ -1621,10 +1713,21 @@ void Queue<T> :: enqueue(T no)
     this->iCount++;
 }
 
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :     Dequeue
+//  Input         :     None
+//  Output        :     Returns front element
+//  Description   :     Removes and returns front element from queue
+//  Author        :     Sahil Rajaram Thorat
+//  Date          :     18/02/2026
+//
+////////////////////////////////////////////////////////////////////////////
+
 template<class T>
 T Queue<T> :: dequeue()                
 {
-    int Value = 0;
+    T Value = 0;
     Queuenode<T> * temp = this->first;
 
     if(this->first == NULL && this->last == NULL)
@@ -1642,6 +1745,17 @@ T Queue<T> :: dequeue()
 
     return Value;
 }
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :     Display
+//  Input         :     None
+//  Output        :     Displays queue elements
+//  Description   :     Prints all elements of queue from front to rear
+//  Author        :     Sahil Rajaram Thorat
+//  Date          :     18/02/2026
+//
+////////////////////////////////////////////////////////////////////////////
 
 template<class T>
 void Queue<T> :: Display()
@@ -1664,6 +1778,17 @@ void Queue<T> :: Display()
 
     cout<<"\n";
 }
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :     Count
+//  Input         :     None
+//  Output        :     Integer
+//  Description   :     Returns total number of elements in queue
+//  Author        :     Sahil Rajaram Thorat
+//  Date          :     18/02/2026
+//
+////////////////////////////////////////////////////////////////////////////
 
 template<class T>
 int Queue<T> :: Count()
